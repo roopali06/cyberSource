@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container-fluid{
+ .container-fluid{
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -34,6 +34,14 @@ ul.dropdown-menu.show{
    background-color: #F27121;
    display: block;
    margin-top: 5px;
+}
+
+.test55{
+    height:300px;
+}
+
+.contain4{
+   display:none;
 }
 
 .icon i{
@@ -66,13 +74,14 @@ ul.dropdown-menu.show{
 
 .post{
     display: flex;
-   align-items: center !important;
-   justify-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .adjust44{
     width:250px;
     height:250px;
+    margin-top:-22px;
 }
 
 .one .text-muted, .two .text-muted{
@@ -94,12 +103,18 @@ ul.dropdown-menu.show{
 }
 
 .change3{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 13px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.row_width{
+    width:80%;
+    margin-left:auto !important;
+    margin-right: auto !important;
 }
 
 .container.un .card1, .container.dos .card2, .container.tres .card3{
-  width:80%;
+  width:100%;
 }
 
 .container.tres .card3 img{
@@ -126,7 +141,8 @@ ul.dropdown-menu.show{
 }
 
 .ad1{
-    margin:0px 70px !important;
+    width:100%;
+    margin:0px auto !important;
 }
 
 .lists{
@@ -138,10 +154,10 @@ ul.dropdown-menu.show{
 }
 
 .check7{
-    background: linear-gradient(147deg,#434343,#000000);
+    background: linear-gradient(147deg,#000000,#000000);
 }
 
-.check3 div i {
+.check3 div i{
     color: #fff;
 }
 
@@ -175,11 +191,27 @@ ul.dropdown-menu.show{
 .change33{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:12px;
+    background:linear-gradient(147deg,#000000,#000000);
+    color:#606c88;
+    margin-bottom:0px !important;
  }
 
  .state9{
     margin-top: -18px;
   }
+
+  .test5{
+    position:absolute;
+    top:160px;
+  }
+
+.changeColor1{
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+
+.changeColor{
+    background-color: transparent;
+}
 
 
   /*------------------------scrollbar--------------------------*/
@@ -197,32 +229,53 @@ ul.dropdown-menu.show{
     border-radius:6px;
   }
 
-  .test5{
-    position:absolute;
-    top:160px;
-  }
   
   /*------------------------scrollbar--------------------------*/
  
- @media only screen and (max-width:960px){
+ @media only screen and (max-width:768px){
+      html,body{
+        overflow-x: hidden;
+    }
 
     .test6{
         flex-direction:column;
     }
+
+    #contain1{
+        width:auto !important;
+    }
+
+    .test55{
+        height:700px;
+    }
+
+    .navbar-toggler{
+        margin:0px 16px !important;
+   }
+
+.row_width{
+    width:80%;
+    margin-left:auto !important;
+    margin-right: auto !important;
+}
+
+.container.un{
+    margin-bottom: 30px;
+}
 
     .test{
         margin:20px 0px;
     }
 
     .adjust3{
-         display: block;
+         display: inline-flex;
          margin:8px 0px;
          padding-top:3px !important;
          padding-bottom:3px !important;
       }
 
       .post{
-       display: inline;
+       display: inline-flex;
      }
 
      .change21{
@@ -233,7 +286,7 @@ ul.dropdown-menu.show{
         text-align:center;
     }
 
-   .adjust44{
+.adjust44{
        margin-top:10px;
        margin-bottom: 20px;
    }
@@ -251,7 +304,7 @@ ul.dropdown-menu.show{
  }
 
    .change40{
-    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    background-image: linear-gradient( 174.2deg,rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
     width:100%;
    }
 
@@ -307,12 +360,12 @@ ul.me-3{
    }
 
    .state{
-     margin-bottom: 16px;
+     margin-bottom: 20px;
    }
 
-   .change3{
+.change3{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .check71{
@@ -330,5 +383,17 @@ ul.me-3{
     font-weight: 600;
  }
 
+ .changeColor1{
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+  }
+
+
+ }
+
+ @media only screen and (max-width: 989px) and (min-width: 768px){
+
+ .odd{
+   padding-left:40px !important;
+}
 
  }
